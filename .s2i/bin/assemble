@@ -6,4 +6,12 @@ echo "custom mvn src"
 
 cd /tmp/src/src
 
-mvn -DskipTests clean install -P minimal
+#!/bin/bash 
+
+# Run additional build before steps
+
+echo "custom mvn src"
+
+cd /tmp/src/src
+
+mvn -e -DskipTests -Dfabric8.skip=true --batch-mode -Djava.net.preferIPv4Stack=true -s /home/jboss/.m2/settings.xml -Dmaven.repo.local=/tmp/artifacts/m2 package
