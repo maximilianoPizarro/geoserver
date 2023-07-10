@@ -2,8 +2,10 @@
 
 # Run additional build before steps
 
-echo "custom mvn src"
+echo "STEP maven install"
+echo "mvn -e -DskipTests --batch-mode -T 2C install"
 
 cd /tmp/src/src
 
-mvn -e -DskipTests --batch-mode package
+mvn -e -DskipTests --batch-mode -T 2C install
+
