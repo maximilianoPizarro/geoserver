@@ -6,4 +6,4 @@ echo "custom mvn src"
 
 cd /tmp/src/src
 
-mvn -DskipTests clean install -P allExtensions
+mvn -DskipTests clean install -P minimal
