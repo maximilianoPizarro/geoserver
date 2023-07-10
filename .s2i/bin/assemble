@@ -7,5 +7,5 @@ echo "mvn -e -DskipTests --batch-mode -T 2C install"
 
 cd /tmp/src/src
 
-mvn -e -DskipTests --batch-mode -T 2C install
+mvn -e -DskipTests --batch-mode install
 
