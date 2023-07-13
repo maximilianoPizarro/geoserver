@@ -1,4 +1,6 @@
-<img src="/doc/en/themes/geoserver/static/GeoServer_500.png" width="353">
+GeoServer v2.23.1
+
+<img src="https://raw.githubusercontent.com/geoserver/geoserver/a115127de02689d0c864659a7dd0f708db7d1b61/doc/en/themes/geoserver/static/GeoServer_500.png" width="353">
 
 [![Gitter](https://badges.gitter.im/geoserver/geoserver.svg)](https://gitter.im/geoserver/geoserver?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![DOI](https://zenodo.org/badge/2751199.svg)](https://zenodo.org/badge/latestdoi/2751199)
@@ -30,10 +32,36 @@ on how to install and use GeoServer.
 GeoServer uses [Apache Maven](https://maven.apache.org/) for a build system. To 
 build the application run maven from the ```src``` directory.
 
-    mvn clean install
+    cd src
+    mvn clean install -DskipTests -P allExtensions,release
+    cd web/app
+    mvn jetty:run
 
 See the [developer guide](https://docs.geoserver.org/latest/en/developer/) 
 for more details.
+
+## Version
+
+| Entrada              | Imagen | Descripción                                    |
+|----------------------|-------------------|------------------------------------------------|
+| Jboss Tomcat 9       | openshift/webserver53-openjdk11-tomcat9-openshift-rhel7:1.0-6.1601409310             | Java JDK 11.                           |
+| Java Build     | openshift/maven:3-jdk-17             | Maven JDK 17             |
+
+
+## Environment
+
+| Entrada              | Valor por defecto | Descripción                                    |
+|----------------------|-------------------|------------------------------------------------|
+| JDK_JAVA_OPTIONS       | -Xms1G -Xmx2G -XX:-UseGCOverheadLimit -XX:-ExitOnOutOfMemoryError -XX:+UseParallelGC -Dfile.encoding=UTF8 -Duser.timezone=America/Buenos_Aires             | Requerido para runtime.                           |
+| GEOSERVER_DATA_DIR     | /deployment/geoserver/data             | Cambiar a /home/jboss/data, almacenamiento workspace admin inicial.             |
+| CORS_ENABLED | false             | cambiar a true para consultas por api rest.                     |
+| PROXY_BASE_URL            | http://localhost:8080/geoserver             | URL proyecto + path o proxy reverse.                                  |
+| CORS_ALLOWED_METHODS            | desactivado             | Agregar GET,POST,PUT,HEAD,OPTIONS                                  |
+| SKIP_DEMO_DATA                | true             | para activar la sección de demo              |
+
+## Plugins
+
+Agregar requeridas en dependencies en source/src/pom.xml
 
 ## Bugs
 

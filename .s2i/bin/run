@@ -1,0 +1,7 @@
+#!/bin/bash 
+
+# Run additional build before steps
+
+cd web/app
+
+mvn jetty:run
