@@ -1,17 +1,9 @@
 #!/bin/bash 
 
-# Run additional build before steps
-
-echo "custom mvn src"
-
-cd /tmp/src/src
-
-#!/bin/bash 
-
-# Run additional build before steps
-
-echo "custom mvn src"
+# Run additional build
+echo "...maven install"
+echo "mvn clean install --batch-mode -DskipTests -P allExtensions,release"
 
 cd /tmp/src/src
 
-mvn clean install -DskipTests -P allExtensions,release
+mvn clean install --batch-mode -DskipTests -P allExtensions,release
