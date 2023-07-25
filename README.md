@@ -55,9 +55,10 @@ for more details.
 | JDK_JAVA_OPTIONS       | -Xms1G -Xmx2G -XX:-UseGCOverheadLimit -XX:-ExitOnOutOfMemoryError -XX:+UseParallelGC -Dfile.encoding=UTF8 -Duser.timezone=America/Buenos_Aires             | Requerido para runtime.                           |
 | GEOSERVER_DATA_DIR     | /deployment/geoserver/data             | Cambiar a /home/jboss/data, almacenamiento workspace admin inicial.             |
 | CORS_ENABLED | false             | cambiar a true para consultas por api rest.                     |
-| PROXY_BASE_URL            | http://localhost:8080/geoserver             | URL proyecto + path o proxy reverse.                                  |
 | CORS_ALLOWED_METHODS            | desactivado             | Agregar GET,POST,PUT,HEAD,OPTIONS                                  |
 | SKIP_DEMO_DATA                | true             | para activar la sección de demo              |
+| GEOSERVER_CSRF_WHITELIST                | vacio             | lista de dns permitidos              |
+| PROXY_BASE_URL            | http://localhost:8080/geoserver             | URL proyecto + path o proxy reverse.                                  |
 
 ## Plugins
 

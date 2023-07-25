@@ -135,6 +135,7 @@
    </filter>
 
    <!-- Uncomment following filter to enable CORS in Jetty. Do not forget the second config block further down.
+    -->
     <filter>
       <filter-name>cross-origin</filter-name>
       <filter-class>org.eclipse.jetty.servlets.CrossOriginFilter</filter-class>
@@ -155,7 +156,7 @@
         <param-value>*</param-value>
       </init-param>
     </filter>
-    -->
+
     
    <!-- Uncomment following filter to enable CORS in Tomcat. Do not forget the second config block further down.
     <filter>
@@ -187,11 +188,16 @@
     </filter-mapping>
    
    <!-- Uncomment following filter to enable CORS
+    -->   
     <filter-mapping>
         <filter-name>cross-origin</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
-    -->
+
+    <context-param>
+      <param-name>GEOSERVER_CSRF_WHITELIST</param-name>
+      <param-value>8080-maximilianopi-geoserver-zuwi9kmn37i.ws-us102.gitpod.io,8080-maximilianopi-geoserver-zuwi9kmn37i.ws-us102.gitpod.io:8080</param-value>
+    </context-param>
    
     <filter-mapping>
       <filter-name>FlushSafeFilter</filter-name>
