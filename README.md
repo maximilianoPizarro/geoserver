@@ -1,4 +1,4 @@
-GeoServer v2.23.1
+GeoServer v2.23.2
 
 <img src="https://raw.githubusercontent.com/geoserver/geoserver/a115127de02689d0c864659a7dd0f708db7d1b61/doc/en/themes/geoserver/static/GeoServer_500.png" width="353">
 
