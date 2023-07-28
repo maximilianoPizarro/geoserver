@@ -1,4 +1,11 @@
-GeoServer v2.23.2
+# GeoServer v2.23.2 OAuth 2.0 OpenID Connect Runnable GitPod
+
+<p align="left">
+<img src="https://img.shields.io/badge/redhat-CC0000?style=for-the-badge&logo=redhat&logoColor=white" alt="Redhat">
+<img src="https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white" alt="kubernetes">
+<img src="https://img.shields.io/badge/docker-0db7ed?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
+<img src="https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white" alt="shell">  
+</p>
 
 <img src="https://raw.githubusercontent.com/geoserver/geoserver/a115127de02689d0c864659a7dd0f708db7d1b61/doc/en/themes/geoserver/static/GeoServer_500.png" width="353">
 
@@ -62,7 +69,18 @@ for more details.
 
 ## Plugins
 
-Agregar requeridas en dependencies en source/src/pom.xml
+Agregar requeridas en dependencies en source/src/web/app/pom.xml
+
+## Screenshot
+<p align="left">
+  <img src="https://github.com/maximilianoPizarro/geoserver/blob/2.23.2-oauth-openid-connect-gitpod-runnable-environment/screenshot/gitpod-capture-0.PNG?raw=true" width="684" title="Run On GitPod">
+  <img src="https://github.com/maximilianoPizarro/geoserver/blob/2.23.2-oauth-openid-connect-gitpod-runnable-environment/screenshot/gitpod-capture.PNG?raw=true" width="684" title="Run On GitPod">
+  <img src="https://github.com/maximilianoPizarro/geoserver/blob/2.23.2-oauth-openid-connect-gitpod-runnable-environment/screenshot/gitpod-capture-1.PNG?raw=true" width="684" title="Run On GitPod">
+  <img src="https://github.com/maximilianoPizarro/geoserver/blob/2.23.2-oauth-openid-connect-gitpod-runnable-environment/screenshot/gitpod-capture-2.PNG?raw=true" width="684" title="Run On GitPod">    
+  <img src="https://github.com/maximilianoPizarro/geoserver/blob/2.23.2-oauth-openid-connect-gitpod-runnable-environment/screenshot/gitpod-capture-3.PNG?raw=true" width="684" title="Run On Openshift">
+    <img src="https://github.com/maximilianoPizarro/geoserver/blob/2.23.2-oauth-openid-connect-gitpod-runnable-environment/screenshot/gitpod-capture-4.PNG?raw=true" width="684" title="Run On GitPod">
+  
+</p>  
 
 ## Bugs
 
