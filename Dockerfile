@@ -1,4 +1,4 @@
-FROM maven:3-jdk-17 AS builder
+FROM maven:3.9.1 AS builder
 
 COPY . /home/geoserver
 
