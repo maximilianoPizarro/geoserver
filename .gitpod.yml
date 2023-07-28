@@ -5,3 +5,7 @@
 tasks:
   - init: cd  /workspace/geoserver/src && mvn clean install --batch-mode -DskipTests -P release
     command: cd /workspace/geoserver/src/web/app && mvn jetty:run
+ports:
+    - name: GeoServer
+      port: 8080
+      onOpen: open-browser    
