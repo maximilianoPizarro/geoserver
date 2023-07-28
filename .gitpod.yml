@@ -8,4 +8,5 @@ tasks:
 ports:
     - name: GeoServer
       port: 8080
-      onOpen: open-browser    
+      onOpen: open-browser
+      visibility: public     
