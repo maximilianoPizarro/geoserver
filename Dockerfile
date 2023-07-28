@@ -1,4 +1,4 @@
-FROM docker.io/maven:3.9.1 AS builder
+FROM docker.io/maven:3-openjdk-17 AS builder
 
 COPY . /home/geoserver
 
