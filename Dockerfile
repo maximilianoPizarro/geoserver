@@ -1,6 +1,8 @@
-FROM maven:3.9.1 AS builder
+FROM docker.io/maven:3.9.1 AS builder
 
 COPY . /home/geoserver
+
+COPY /k8s/web.xml /workspace/geoserver/src/web/app/src/main/webapp/WEB-INF/web.xml 
 
 WORKDIR /home/geoserver
 
