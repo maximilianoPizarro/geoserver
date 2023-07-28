@@ -6,7 +6,9 @@ COPY /k8s/web.xml /home/geoserver/src/web/app/src/main/webapp/WEB-INF/web.xml
 
 WORKDIR /home/geoserver
 
-RUN MAVEN_OPTS="-Xmx3000m"
+ENV MAVEN_OPTS="-Xmx3489m"
+
+ENV JAVA_TOOL_OPTION="-Xmx3489m"
 
 RUN  cd src && mvn clean install --batch-mode -DskipTests -P release
 

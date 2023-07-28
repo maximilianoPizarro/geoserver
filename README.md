@@ -51,8 +51,8 @@ for more details.
 
 | Entrada              | Imagen | Descripción                                    |
 |----------------------|-------------------|------------------------------------------------|
-| Jboss Tomcat 9       | openshift/webserver53-openjdk11-tomcat9-openshift-rhel7:1.0-6.1601409310             | Java JDK 11.                           |
-| Java Build     | openshift/maven:3-jdk-17             | Maven JDK 17             |
+| Jboss Tomcat 9       | registry.redhat.io/jboss-webserver-5/jws57-openjdk11-openshift-rhel8            | Java JDK 11.                           |
+| Java Build     | docker.io/maven:3-openjdk-17             | Maven JDK 17             |
 
 
 ## Environment
