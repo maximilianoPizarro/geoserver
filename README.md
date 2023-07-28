@@ -73,12 +73,12 @@ Agregar requeridas en dependencies en source/src/web/app/pom.xml
 
 ## Screenshot
 <p align="left">
-  <img src="https://github.com/maximilianoPizarro/geoserver/blob/2.23.2-oauth-openid-connect-gitpod-runnable-environment/screenshot/gitpod-capture-0.PNG?raw=true" width="684" title="Run On GitPod">
-  <img src="https://github.com/maximilianoPizarro/geoserver/blob/2.23.2-oauth-openid-connect-gitpod-runnable-environment/screenshot/gitpod-capture.PNG?raw=true" width="684" title="Run On GitPod">
-  <img src="https://github.com/maximilianoPizarro/geoserver/blob/2.23.2-oauth-openid-connect-gitpod-runnable-environment/screenshot/gitpod-capture-1.PNG?raw=true" width="684" title="Run On GitPod">
-  <img src="https://github.com/maximilianoPizarro/geoserver/blob/2.23.2-oauth-openid-connect-gitpod-runnable-environment/screenshot/gitpod-capture-2.PNG?raw=true" width="684" title="Run On GitPod">    
-  <img src="https://github.com/maximilianoPizarro/geoserver/blob/2.23.2-oauth-openid-connect-gitpod-runnable-environment/screenshot/gitpod-capture-3.PNG?raw=true" width="684" title="Run On Openshift">
-    <img src="https://github.com/maximilianoPizarro/geoserver/blob/2.23.2-oauth-openid-connect-gitpod-runnable-environment/screenshot/gitpod-capture-4.PNG?raw=true" width="684" title="Run On GitPod">
+  <img src="https://raw.githubusercontent.com/maximilianoPizarro/geoserver/2.23.2-oauth-openid-connect-gitpod-runnable-enviroment/screenshot/gitpod-capture-0.PNG?raw=true" width="684" title="Run On GitPod">
+  <img src="https://raw.githubusercontent.com/maximilianoPizarro/geoserver/2.23.2-oauth-openid-connect-gitpod-runnable-enviroment/screenshot/gitpod-capture.PNG?raw=true" width="684" title="Run On GitPod">
+  <img src="https://raw.githubusercontent.com/maximilianoPizarro/geoserver/2.23.2-oauth-openid-connect-gitpod-runnable-enviroment/screenshot/gitpod-capture-1.PNG?raw=true" width="684" title="Run On GitPod">
+  <img src="https://raw.githubusercontent.com/maximilianoPizarro/geoserver/2.23.2-oauth-openid-connect-gitpod-runnable-enviroment/screenshot/gitpod-capture-2.PNG?raw=true" width="684" title="Run On GitPod">    
+  <img src="https://raw.githubusercontent.com/maximilianoPizarro/geoserver/2.23.2-oauth-openid-connect-gitpod-runnable-enviroment/screenshot/gitpod-capture-3.PNG?raw=true" width="684" title="Run On Openshift">
+    <img src="https://raw.githubusercontent.com/maximilianoPizarro/geoserver/2.23.2-oauth-openid-connect-gitpod-runnable-enviroment/screenshot/gitpod-capture-4.PNG?raw=true" width="684" title="Run On GitPod">
   
 </p>  
 
