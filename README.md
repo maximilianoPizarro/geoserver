@@ -1,4 +1,4 @@
-#GeoServer v2.23.2 OAuth 2.0 OpenID Connect Runnable GitPod
+# GeoServer v2.23.2 OAuth 2.0 OpenID Connect Runnable GitPod
 
 <p align="left">
 <img src="https://img.shields.io/badge/redhat-CC0000?style=for-the-badge&logo=redhat&logoColor=white" alt="Redhat">
