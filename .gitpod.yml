@@ -3,5 +3,5 @@
 # and commit this file to your remote git repository to share the goodness with others.
 
 tasks:
-  - init: cd src && mvn clean install --batch-mode -DskipTests -P release
-    command: cd web/app && mvn jetty:run
+  - init: cd  /workspace/geoserver/src && mvn clean install --batch-mode -DskipTests -P release
+    command: cd /workspace/geoserver/src/web/app && mvn jetty:run

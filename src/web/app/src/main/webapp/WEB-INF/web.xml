@@ -195,8 +195,8 @@
     </filter-mapping>
 
     <context-param>
-      <param-name>GEOSERVER_CSRF_WHITELIST</param-name>
-      <param-value>8080-maximilianopi-geoserver-zuwi9kmn37i.ws-us102.gitpod.io,8080-maximilianopi-geoserver-zuwi9kmn37i.ws-us102.gitpod.io:8080</param-value>
+      <param-name>GEOSERVER_CSRF_DISABLED</param-name>
+      <param-value>true</param-value>
     </context-param>
    
     <filter-mapping>
