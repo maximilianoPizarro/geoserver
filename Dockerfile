@@ -10,7 +10,7 @@ ENV MAVEN_OPTS="-Xmx3489m"
 
 ENV JAVA_TOOL_OPTION="-Xmx3489m"
 
-RUN  cd src && mvn clean install --batch-mode -DskipTests -P release
+RUN  cd src && mvn clean install --batch-mode -DskipTests -P minimal
 
 FROM registry.redhat.io/jboss-webserver-5/jws57-openjdk11-openshift-rhel8
 
