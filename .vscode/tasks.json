@@ -1,0 +1,24 @@
+{
+    "tasks": [
+        {
+            "type": "devfile",
+            "command": "mvn clean install --batch-mode -DskipTests -P release",
+            "workdir": "${PROJECT_SOURCE}/src",
+            "component": "universal-developer-image",
+            "problemMatcher": [],
+            "label": "devfile: install",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "type": "devfile",
+            "command": "mvn jetty:run",
+            "workdir": "${PROJECT_SOURCE}/src/web/appv",
+            "component": "universal-developer-image",
+            "problemMatcher": [],
+            "label": "devfile: run"
+        }
+    ]
+}
