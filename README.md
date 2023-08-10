@@ -7,7 +7,7 @@
 <img src="https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white" alt="shell">
 </p>
 
-[![Contribute](https://www.eclipse.org/che/contribute.svg)](https://<openshift_dev_spaces_fqdn>/#https://github.com/maximilianoPizarro) 
+[![Contribute](https://www.eclipse.org/che/contribute.svg)](https://devspaces.apps.sandbox-m2.ll9k.p1.openshiftapps.com/#https://github.com/maximilianoPizarro) 
 
 <img src="https://raw.githubusercontent.com/geoserver/geoserver/a115127de02689d0c864659a7dd0f708db7d1b61/doc/en/themes/geoserver/static/GeoServer_500.png" width="353">
 
