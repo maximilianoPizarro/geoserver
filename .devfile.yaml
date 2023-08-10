@@ -4,6 +4,7 @@ metadata:
     metadata-name-field: generateName
     metadata-name-original-value: geoserver
   name: geoserver
+  namespaces: mpizarro-dev
 attributes:
   che-theia.eclipse.org/sidecar-policy: mergeImage
   controller.devfile.io/devworkspace-config:
