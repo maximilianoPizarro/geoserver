@@ -52,7 +52,7 @@ commands:
     exec:
       commandLine: mvn clean install --batch-mode -DskipTests -P release
       component: universal-developer-image
-      workingDir: /projects/geoserver/src
+      workingDir: ${PROJECT_SOURCE}/src
       group:
         isDefault: true
         kind: build
@@ -60,7 +60,7 @@ commands:
     exec:
       commandLine: mvn jetty:run
       component: universal-developer-image
-      workingDir: /projects/geoserver/src/web/app
+      workingDir: ${PROJECT_SOURCE}/src/web/app
       group:
         isDefault: true
         kind: run    
