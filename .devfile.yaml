@@ -60,7 +60,7 @@ commands:
     exec:
       commandLine: mvn jetty:run
       component: universal-developer-image
-     workingDir: ${PROJECT_SOURCE}/src/web/appv
+      workingDir: ${PROJECT_SOURCE}/src/web/appv
       group:
         isDefault: true
         kind: run    
