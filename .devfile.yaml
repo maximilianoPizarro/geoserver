@@ -50,17 +50,17 @@ components:
 commands:
   - id: install
     exec:
-      commandLine: cd  /projects/geoserver/src && mvn clean install --batch-mode -DskipTests -P release
+      commandLine: mvn clean install --batch-mode -DskipTests -P release
       component: universal-developer-image
-      workingDir: /projects/geoserver
+      workingDir: /projects/geoserver/src
       group:
         isDefault: true
         kind: build
   - id: run
     exec:
-      commandLine: cd /projects/geoserver/src/web/app && mvn jetty:run
+      commandLine: mvn jetty:run
       component: universal-developer-image
-      workingDir: /projects/geoserver
+      workingDir: /projects/geoserver/src/web/app
       group:
         isDefault: true
         kind: run    
