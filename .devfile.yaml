@@ -50,7 +50,7 @@ components:
 commands:
   - id: install
     exec:
-      commandLine: mvn clean install --batch-mode -DskipTests -P release
+      commandLine: mvn clean install --batch-mode -DskipTests -P release -Dmaven.repo.local=${PROJECT_SOURCE}/.m2
       component: universal-developer-image
       workingDir: ${PROJECT_SOURCE}/src
       group:
@@ -58,7 +58,7 @@ commands:
         kind: build
   - id: run
     exec:
-      commandLine: mvn jetty:run
+      commandLine: mvn jetty:run -Dmaven.repo.local=${PROJECT_SOURCE}/.m2
       component: universal-developer-image
       workingDir: ${PROJECT_SOURCE}/src/web/app
       group:
