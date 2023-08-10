@@ -15,10 +15,18 @@
         {
             "type": "devfile",
             "command": "mvn jetty:run",
-            "workdir": "${PROJECT_SOURCE}/src/web/appv",
+            "workdir": "${PROJECT_SOURCE}/src/web/app",
             "component": "universal-developer-image",
             "problemMatcher": [],
             "label": "devfile: run"
-        }
+        },
+        {   
+            "label": "devfile: install & run",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "devfile: install",
+                "devfile: run"
+            ]
+        }        
     ]
 }
