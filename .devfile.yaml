@@ -1,0 +1,65 @@
+schemaVersion: 2.1.0
+metadata:
+  attributes:
+    metadata-name-field: generateName
+    metadata-name-original-value: geoserver
+  name: geoserver
+attributes:
+  che-theia.eclipse.org/sidecar-policy: mergeImage
+  controller.devfile.io/devworkspace-config:
+    name: devworkspace-config
+    namespace: crw
+  controller.devfile.io/scc: container-build
+  controller.devfile.io/storage-type: common
+  dw.metadata.annotations:
+    che.eclipse.org/devfile-source: |
+      url:
+        location: https://github.com/maximilianoPizarro/geoserver.git
+      factory:
+        params: url=https://github.com/maximilianoPizarro/geoserver.git
+projects:
+  - git:
+      remotes:
+        origin: https://gitlab.com/maximilianoPizarro/geoserver.git
+    name: geoserver
+components:
+  - attributes:
+      controller.devfile.io/merge-contribution: true
+    container:
+      endpoints:
+        - name: http-8080
+          targetPort: 8080
+      env:
+        - name: CHE_DASHBOARD_URL
+          value: https://devspaces.apps.sandbox-m2.ll9k.p1.openshiftapps.com
+        - name: CHE_PLUGIN_REGISTRY_URL
+          value: https://devspaces.apps.sandbox-m2.ll9k.p1.openshiftapps.com/plugin-registry/v3
+        - name: CHE_PLUGIN_REGISTRY_INTERNAL_URL
+          value: http://plugin-registry.crw.svc:8080/v3
+        - name: CLUSTER_CONSOLE_URL
+          value: https://console-openshift-console.apps.sandbox-m2.ll9k.p1.openshiftapps.com
+        - name: CLUSTER_CONSOLE_TITLE
+          value: OpenShift console
+        - name: OPENVSX_REGISTRY_URL
+          value: https://open-vsx.org
+      image: registry.redhat.io/devspaces/udi-rhel8@sha256:b1f112760b2640b5e8612869536a000612837e8e247c74d3d99e9fcfbc56d2f3
+      sourceMapping: /projects
+    name: universal-developer-image
+
+commands:
+  - id: install
+    exec:
+      commandLine: cd  /geoserver/src && mvn clean install --batch-mode -DskipTests -P release
+      component: dev-tooling
+      workingDir: /projects
+      group:
+        isDefault: true
+        kind: build
+  - id: run
+    exec:
+      commandLine: cd /geoserver/src/web/app && mvn jetty:run
+      component: dev-tooling
+      workingDir: /projects
+      group:
+        isDefault: true
+        kind: run    
