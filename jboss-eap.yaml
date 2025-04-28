@@ -1,0 +1,30 @@
+apiVersion: wildfly.org/v1alpha1
+kind: WildFlyServer
+metadata:
+  name: geoserver
+  namespace: geoserver
+spec:
+  applicationImage: 'docker.osgeo.org/geoserver:2.27.0'
+  env:
+    - name: GEOSERVER_DATA_DIR
+      value: /opt/eap/standalone/data
+    - name: CORS_ENABLED
+      value: 'false'
+    - name: SKIP_DEMO_DATA
+      value: 'false'
+    - name: JDK_JAVA_OPTIONS
+      value: '-Xms1G -Xmx2G -XX:-UseGCOverheadLimit -XX:-ExitOnOutOfMemoryError -XX:+UseParallelGC -Dfile.encoding=UTF8 -Duser.timezone=America/Buenos_Aires'      
+    - name: PROXY_BASE_URL
+      value: 'http://geoserver-route-geoserver.apps.rosa.ahuqb-uqzcc-e4c.omfp.p3.openshiftapps.com/geoserver'
+  replicas: 1
+  serviceAccountName: geoserver-sa
+  readinessProbe:
+    httpGet:
+      path: /geoserver
+      port: 8080
+  livenessProbe:
+    httpGet:
+      path: /geoserver
+      port: 8080
+  storage:
+    emptyDir: {}
